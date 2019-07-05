@@ -29,7 +29,7 @@ app.use((req, res, next) => {
 
 app.use(express.json()); //Utiliza o json como comunicação
 app.use(express.urlencoded({ extended: true })); //Permite o envio de arquivos
-app.use('/files', express.static(path.resolve(__dirname, '..', 't   mp')));
+app.use('/files', express.static(path.resolve(__dirname, '..', 'tmp')));
 
 app.use(require('./routes'));
 
