@@ -22,7 +22,7 @@ mongoose.connect('mongodb+srv://admin:admin@cluster0-ky2dx.mongodb.net/dropboxre
     }
 );
 
-app.io((req, res, next) => {
+app.use((req, res, next) => {
     req.io = io;
     return next();
 })
